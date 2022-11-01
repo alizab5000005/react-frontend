@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.bid-details img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+}
+@media only screen and (max-width: 600px) {
+
+  .bids{
+    height: 260px !important;
+  }
+  .bidsd{
+    height: 870px !important;
+  }
+
+  .bid-details img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+}
