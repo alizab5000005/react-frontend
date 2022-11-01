@@ -19,7 +19,6 @@ const SignIn = () => {
           </div>
 
           <button type="submit" class="btn btn-primary">Submit</button>
-          <span> Don't have an acount?</span> <Link to={'/sign-up'}>Sign Up</Link>
         </form>
       </div>
     </>
