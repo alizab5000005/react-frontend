@@ -12,6 +12,7 @@ import SignIn from './pages/SignIn';
 import Bids from './pages/Bids';
 import BidDetails from './pages/BidDetails';
 import PostBid from './pages/PostBid';
+import Messenger from './pages/Messenger';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
         <Route exact path='/bids' element={< Bids />} />
         <Route exact path='/bid/:name' element={< BidDetails />} />
         <Route exact path='/post-bid' element={< PostBid />} />
+        <Route exact path='/messenger' element={< Messenger />} />
 
       </Routes>
 

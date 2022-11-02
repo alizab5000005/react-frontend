@@ -34,6 +34,9 @@ const Navbar = () => {
           <form class="d-flex align-items-center">
           <ul class="navbar-nav  mb-2 mb-lg-0">
             <li class="nav-item">
+              <Link to={'/messenger'} class="nav-link " aria-current="page">Messenger</Link>
+            </li>
+            <li class="nav-item">
               <Link to={'/post-bid'} class="nav-link " aria-current="page">Post Bid</Link>
             </li>
             <li class="nav-item">

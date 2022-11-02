@@ -72,8 +72,104 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
+                    <div className="col-lg-4 col-6">
+                        <div class="card" style={{ width: '100%' }}>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy-fR0Zx64Qe2yt6dd98UhZxSG8UQnz004XlDMn3yFrWpbKUBwMUpFgZaiFLtINWnYdHw&usqp=CAU" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card.</p>
+                                <Link to={'contractor/Khan'} class="btn btn-primary">Mr Khan</Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-6">
+                        <div class="card" style={{ width: '100%' }}>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy-fR0Zx64Qe2yt6dd98UhZxSG8UQnz004XlDMn3yFrWpbKUBwMUpFgZaiFLtINWnYdHw&usqp=CAU" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card.</p>
+                                <Link to={'contractor/Khan'} class="btn btn-primary">Mr Khan</Link>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div className="container pt-2 bg-light mt-5">
+                <h3>Contractor Bids</h3>
+                <div className="row ">
+
+                    <div className="col-lg-4 col-12">
+                        <div class="card" style={{ width: '100%' }}>
+                            <img src="https://media.gettyimages.com/photos/modern-elegant-kitchen-stock-photo-picture-id1297586166?s=612x612" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Kitchen</h5>
+                                <p class="card-text">Some quick example text to build on the card.</p>
+                                <Link to={'bid/Kitchen'} class="btn btn-primary">View</Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-12">
+                        <div class="card" style={{ width: '100%' }}>
+                            <img src="https://media.gettyimages.com/photos/modern-elegant-kitchen-stock-photo-picture-id1297586166?s=612x612" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Kitchen</h5>
+                                <p class="card-text">Some quick example text to build on the card.</p>
+                                <Link to={'bid/Kitchen'} class="btn btn-primary">View</Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-12">
+                        <div class="card" style={{ width: '100%' }}>
+                            <img src="https://media.gettyimages.com/photos/modern-elegant-kitchen-stock-photo-picture-id1297586166?s=612x612" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Kitchen</h5>
+                                <p class="card-text">Some quick example text to build on the card.</p>
+                                <Link to={'bid/Kitchen'} class="btn btn-primary">View</Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container pt-2 bg-light mt-5">
+                <h3>User Bids</h3>
+                <div className="row">
+
+                    <div className="col-lg-4 col-12">
+                        <div class="card" style={{ width: '100%' }}>
+                            <img src="https://media.gettyimages.com/photos/modern-elegant-kitchen-stock-photo-picture-id1297586166?s=612x612" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Kitchen</h5>
+                                <p class="card-text">Some quick example text to build on the card.</p>
+                                <Link to={'bid/Kitchen'} class="btn btn-primary">View</Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-12">
+                        <div class="card" style={{ width: '100%' }}>
+                            <img src="https://media.gettyimages.com/photos/modern-elegant-kitchen-stock-photo-picture-id1297586166?s=612x612" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Kitchen</h5>
+                                <p class="card-text">Some quick example text to build on the card.</p>
+                                <Link to={'bid/Kitchen'} class="btn btn-primary">View</Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-12">
+                        <div class="card" style={{ width: '100%' }}>
+                            <img src="https://media.gettyimages.com/photos/modern-elegant-kitchen-stock-photo-picture-id1297586166?s=612x612" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Kitchen</h5>
+                                <p class="card-text">Some quick example text to build on the card.</p>
+                                <Link to={'bid/Kitchen'} class="btn btn-primary">View</Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
         </>
     )
 }
