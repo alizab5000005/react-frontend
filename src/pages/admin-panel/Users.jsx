@@ -1,140 +1,115 @@
 import React from 'react'
-import Rightbar from '../../components/admin-panel/Rightbar'
-import RightSideIcons from '../../components/admin-panel/RightSideIcons'
+import Footer from '../../components/admin-panel/Footer'
 import Sidebar from '../../components/admin-panel/Sidebar'
 
-const Contractors = () => {
-  return (
-    <>
-    <RightSideIcons />
-    <Sidebar />
-    <Rightbar />
-    <section className="content">
-    <div className="body_scroll">
-        <div className="block-header">
-            <div className="row">
-                <div className="col-lg-7 col-md-6 col-sm-12">
-                    <h2>User List</h2>
-                    <ul className="breadcrumb">
-                        <li className="breadcrumb-item"><a href="index.html"><i className="zmdi zmdi-home"></i> Dashboard</a></li>
-                        <li className="breadcrumb-item active">User List</li>
-                    </ul>
-                    <button className="btn btn-primary btn-icon mobile_menu" type="button"><i className="zmdi zmdi-sort-amount-desc"></i></button>
-                </div>
-                <div className="col-lg-5 col-md-6 col-sm-12">                
-                    <button className="btn btn-primary btn-icon float-right right_icon_toggle_btn" type="button"><i className="zmdi zmdi-arrow-right"></i></button>
-                </div>
-            </div>
-        </div>
-        <div className="container-fluid">
-            <div className="row clearfix">
-                <div className="col-lg-12">
-                    <div className="card">
-                        <div className="table-responsive">
-                            <table className="table table-hover product_item_list c_table theme-color mb-0">
-                                <thead>
-                                    <tr>
-                                        <th>Full Name</th>
-                                        <th data-breakpoints="sm xs">Email</th>
-                                        <th data-breakpoints="xs">Phone</th>
-                                        <th data-breakpoints="xs md">Status</th>
-                                        <th data-breakpoints="sm xs md">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><h5>Simple Black Clock</h5></td>
-                                        <td><span className="text-muted">randomised words even slightly believable</span></td>
-                                        <td>$16.00</td>
-                                        <td><span className="col-green">In Stock</span></td>
-                                        <td>
-                                            <a href="javascript:void(0);" className="btn btn-default waves-effect waves-float btn-sm waves-green"><i className="zmdi zmdi-edit"></i></a>
-                                            <a href="javascript:void(0);" className="btn btn-default waves-effect waves-float btn-sm waves-red"><i className="zmdi zmdi-delete"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><h5>Brone Candle</h5></td>
-                                        <td><span className="text-muted">It is a long established  will be distracted</span></td>
-                                        <td>$15.00</td>
-                                        <td><span className="col-amber">Low Stock</span></td>
-                                        <td>
-                                            <a href="javascript:void(0);" className="btn btn-default waves-effect waves-float btn-sm waves-green"><i className="zmdi zmdi-edit"></i></a>
-                                            <a href="javascript:void(0);" className="btn btn-default waves-effect waves-float btn-sm waves-red"><i className="zmdi zmdi-delete"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><h5>Wood Simple Clock</h5></td>
-                                        <td><span className="text-muted">There passages of Lorem Ipsum available</span></td>
-                                        <td>$16.00</td>
-                                        <td><span className="col-amber">Low Stock</span></td>
-                                        <td>
-                                            <a href="javascript:void(0);" className="btn btn-default waves-effect waves-float btn-sm waves-green"><i className="zmdi zmdi-edit"></i></a>
-                                            <a href="javascript:void(0);" className="btn btn-default waves-effect waves-float btn-sm waves-red"><i className="zmdi zmdi-delete"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><h5>Unero Small Bag</h5></td>
-                                        <td><span className="text-muted">It is a long established fact that a distracted</span></td>
-                                        <td>$23.00</td>
-                                        <td><span className="col-red">Out Of Stock</span></td>
-                                        <td>
-                                            <a href="javascript:void(0);" className="btn btn-default waves-effect waves-float btn-sm waves-green"><i className="zmdi zmdi-edit"></i></a>
-                                            <a href="javascript:void(0);" className="btn btn-default waves-effect waves-float btn-sm waves-red"><i className="zmdi zmdi-delete"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><h5>Simple Black Clock</h5></td>
-                                        <td><span className="text-muted">Contrary to popular belief, simply random text</span></td>
-                                        <td>$16.00</td>
-                                        <td><span className="col-green">In Stock</span></td>
-                                        <td>
-                                            <a href="javascript:void(0);" className="btn btn-default waves-effect waves-float btn-sm waves-green"><i className="zmdi zmdi-edit"></i></a>
-                                            <a href="javascript:void(0);" className="btn btn-default waves-effect waves-float btn-sm waves-red"><i className="zmdi zmdi-delete"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><h5>Brone Lamp Glasses</h5></td>
-                                        <td><span className="text-muted">All the Lorem Ipsum generators on predefined chunks</span></td>
-                                        <td>$12.00</td>
-                                        <td><span className="col-green">In Stock</span></td>
-                                        <td>
-                                            <a href="javascript:void(0);" className="btn btn-default waves-effect waves-float btn-sm waves-green"><i className="zmdi zmdi-edit"></i></a>
-                                            <a href="javascript:void(0);" className="btn btn-default waves-effect waves-float btn-sm waves-red"><i className="zmdi zmdi-delete"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                         <td><h5>Simple Black Clock</h5></td>
-                                        <td><span className="text-muted">established fact that a be distracted</span></td>
-                                        <td>$22.00</td>
-                                        <td><span className="col-red">Out Of Stock</span></td>
-                                        <td>
-                                            <a href="javascript:void(0);" className="btn btn-default waves-effect waves-float btn-sm waves-green"><i className="zmdi zmdi-edit"></i></a>
-                                            <a href="javascript:void(0);" className="btn btn-default waves-effect waves-float btn-sm waves-red"><i className="zmdi zmdi-delete"></i></a>
-                                        </td>
-                                    </tr>        
-                                </tbody>
-                            </table>
+const Users = () => {
+    return (
+        <>
+            <div class="wrapper">
+                <Sidebar />
+                <div class="content-wrapper">
+                    <div class="content-header">
+                        <div class="container-fluid">
+                            <div class="row mb-2">
+                                <div class="col-sm-6">
+                                    <h1 class="m-0">Users</h1>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ol class="breadcrumb float-sm-right">
+                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                        <li class="breadcrumb-item active">Users</li>
+                                    </ol>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className="card">
-                        <div className="body">                            
-                            <ul className="pagination pagination-primary m-b-0">
-                                <li className="page-item"><a className="page-link" href="javascript:void(0);"><i className="zmdi zmdi-arrow-left"></i></a></li>
-                                <li className="page-item active"><a className="page-link" href="javascript:void(0);">1</a></li>
-                                <li className="page-item"><a className="page-link" href="javascript:void(0);">2</a></li>
-                                <li className="page-item"><a className="page-link" href="javascript:void(0);">3</a></li>
-                                <li className="page-item"><a className="page-link" href="javascript:void(0);">4</a></li>
-                                <li className="page-item"><a className="page-link" href="javascript:void(0);"><i className="zmdi zmdi-arrow-right"></i></a></li>
-                            </ul>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card mx-2">
+
+
+                                <div class="card-body table-responsive p-0" style={{ height: '300px' }}>
+                                    <table class="table table-head-fixed text-nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Email</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Username</td>
+                                                <td>user@gmail.come</td>
+
+                                                <td><span class="tag tag-success">Approved</span></td>
+                                                <td>Delete</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Username</td>
+                                                <td>user@gmail.come</td>
+
+                                                <td><span class="tag tag-warning">Pending</span></td>
+                                                <td>Delete</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Username</td>
+                                                <td>user@gmail.com</td>
+
+                                                <td><span class="tag tag-primary">Approved</span></td>
+                                                <td>Delete</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Username</td>
+                                                <td>user@gmail.come</td>
+
+                                                <td><span class="tag tag-danger">Denied</span></td>
+                                                <td>Delete</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Username</td>
+                                                <td>user@gmail.com</td>
+
+                                                <td><span class="tag tag-success">Approved</span></td>
+                                                <td>Delete</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Username</td>
+                                                <td>user@gmail.coma Doe</td>
+
+                                                <td><span class="tag tag-warning">Pending</span></td>
+                                                <td>Delete</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Username</td>
+                                                <td>user@gmail.com Doe</td>
+
+                                                <td><span class="tag tag-primary">Approved</span></td>
+                                                <td>Delete</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Username</td>
+                                                <td>user@gmail.comoe</td>
+
+                                                <td><span class="tag tag-danger">Denied</span></td>
+                                                <td>Delete</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+
                         </div>
                     </div>
+
                 </div>
+                <Footer />
             </div>
-        </div>
-    </div>
-</section>
-</>
-  )
+        </>
+    )
 }
 
-export default Contractors
+export default Users

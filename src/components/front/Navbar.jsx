@@ -3,55 +3,81 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <nav class="navbar navbar-expand-lg h5  navbar-light bg-primary">
-      <div class="container-fluid">
-        <a class="navbar-bran p-2 my-auto" href="#">
-          <img style={{ borderRadius: '50%', width: '60px' }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAHXPluq6GtTRPDIHRv5kJPy86uFjp5sO7hg&usqp=CAU" alt="" />
-        </a>
-        <button class="navbar-toggler bg-light me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span style={{marginTop:'-6px', marginLeft:'-9px'}} class="navbar-toggler-icon "></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <Link to={'/'} class="nav-link ">Home</Link>
-            </li>
-            <li class="nav-item">
-            <Link to={'/bids'} class="nav-link ">Bids</Link>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><Link class="dropdown-item" to={'/admin/dashboard'}>Admin</Link></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
 
-              </ul>
-            </li>
 
-          </ul>
-          <form class="d-flex align-items-center">
-          <ul class="navbar-nav  mb-2 mb-lg-0">
-            <li class="nav-item">
-              <Link to={'/messenger'} class="nav-link " aria-current="page">Messenger</Link>
-            </li>
-            <li class="nav-item">
-              <Link to={'/post-bid'} class="nav-link " aria-current="page">Post Bid</Link>
-            </li>
-            <li class="nav-item">
-              <Link to={'/sign-up'} class="nav-link " aria-current="page">Signup</Link>
-            </li>
-            <li class="nav-item">
-              <Link to={'/sign-in'} class="nav-link " aria-current="page">Signin</Link>
-            </li>
-          
-
-          </ul>
-          </form>
+    <div className="container-fluid">
+            <div className="row">
+                <div className="col-lg-3 bg-secondary d-none d-lg-block">
+                    <a href="" className="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                        <h1 className="m-0 display-3 text-primary">Name</h1>
+                    </a>
+                </div>
+                <div className="col-lg-9 bg-light">
+                    <div className="row bg-dark d-none d-lg-flex">
+                        <div className="col-lg-7 text-left text-white">
+                            <div className="h-100 d-inline-flex align-items-center border-right border-primary py-2 px-3">
+                                <i className="fa fa-envelope text-primary mr-2"></i>
+                                <small>info@example.com</small>
+                            </div>
+                            <div className="h-100 d-inline-flex align-items-center py-2 px-2">
+                                <i className="fa fa-phone-alt text-primary mr-2"></i>
+                                <small>+92 300 000 0000</small>
+                            </div>
+                        </div>
+                        <div className="col-lg-5 text-right">
+                            <div className="d-inline-flex align-items-center pr-2">
+                                <a className="text-primary p-2" href="">
+                                    <i className="fab fa-facebook-f"></i>
+                                </a>
+                                <a className="text-primary p-2" href="">
+                                    <i className="fab fa-twitter"></i>
+                                </a>
+                                <a className="text-primary p-2" href="">
+                                    <i className="fab fa-linkedin-in"></i>
+                                </a>
+                                <a className="text-primary p-2" href="">
+                                    <i className="fab fa-instagram"></i>
+                                </a>
+                                <a className="text-primary p-2" href="">
+                                    <i className="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <nav className="navbar navbar-expand-lg  navbar-light p-0">
+                        <a href="" className="navbar-brand d-block d-lg-none">
+                            <h1 className="m-0 display-4 text-primary">Name</h1>
+                        </a>
+                        <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <div className="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div className="navbar-nav mr-auto py-0">
+                                <Link to={'/'} className="nav-item nav-link ">Home</Link>
+                                <Link to={'/bids'} className="nav-item nav-link ">Bids</Link>
+                                <Link to={'/'} className="nav-item nav-link">About</Link>
+                                <Link to={'/'} className="nav-item nav-link">Contact</Link>
+                                <Link to={'/post-bid'} className="nav-item nav-link ">Post Bid</Link>
+                                <Link to={'/messenger'} className="nav-item nav-link ">Messenger</Link>
+                              
+                                <div className="nav-item dropdown">
+                                    <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                                    <div className="dropdown-menu rounded-0 m-0">
+                                        <Link to={'/admin/login'} className="nav-item nav-link ">Admin Login</Link>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <Link to={'/sign-up'} className="btn btn-primary mr-2 d-lg-block">Register</Link>
+                            <Link to={'/sign-in'} className="btn btn-primary mr-2 d-lg-block">Login</Link>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </div>
-      </div>
-    </nav>
+
+
+  
   )
 }
 

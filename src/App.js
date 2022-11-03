@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import Dashboard from './pages/admin-panel/Dashboard';
 import Contractors from './pages/admin-panel/Contractors';
+import Contracts from './pages/admin-panel/Contracts';
 import Complaints from './pages/admin-panel/Complaints';
 import Users from './pages/admin-panel/Users';
 import AdminSignIn from './pages/admin-panel/SignIn';
@@ -24,6 +25,7 @@ function App() {
         <Route exact path='/admin/dashboard' element={< Dashboard />} />
         <Route exact path='/admin/login' element={< AdminSignIn />} />
         <Route exact path='/admin/contractors' element={< Contractors />} />
+        <Route exact path='/admin/contracts' element={< Contracts />} />
         <Route exact path='/admin/complaints' element={< Complaints />} />
         <Route exact path='/admin/users' element={< Users />} />
         <Route exact path='/contractor/:name' element={< Profile />} />

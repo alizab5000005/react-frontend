@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom'
 const SignIn = () => {
   return (
     <>
-      <Navbar />
+      
       <div className="container">
-        <form style={{ marginTop: '150px' }} className="bg-light p-5 rounded">
+        <form className="p-5 rounded">
           <h3 className='text-dark'>Admin Login</h3>
           <div class="mb-3">
             <label htmlFor="exampleInputEmail1" class="form-label">Email address</label>
@@ -18,7 +18,9 @@ const SignIn = () => {
             <input type="password" placeholder='Password' class="form-control" id="exampleInputPassword1" />
           </div>
 
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <Link to={'/admin/dashboard'}>
+          <button type="submit" class="btn btn-primary">Login</button>
+          </Link>
         </form>
       </div>
     </>

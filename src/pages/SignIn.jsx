@@ -7,7 +7,7 @@ const SignIn = () => {
     <>
     <Navbar />
     <div className="container">
-        <form style={{marginTop:'150px'}} className="bg-light p-5 rounded">
+        <form className="p-5 rounded">
             <div class="mb-3">
                 <label htmlFor="exampleInputEmail1" class="form-label">Email address</label>
                 <input type="email" placeholder='Email' class="form-control" />
@@ -17,7 +17,7 @@ const SignIn = () => {
                 <input type="password" placeholder='Password' class="form-control" id="exampleInputPassword1" />
             </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Login</button>
             <span> Don't have an acount?</span> <Link to={'/sign-up'}>Sign Up</Link>
         </form>
     </div>

@@ -7,8 +7,8 @@ const PostBid = () => {
     <>
     <Navbar />
     <div className="container">
-        <form style={{ marginTop: '130px' }} className="bg-light p-5 rounded">
-            <h3 style={{ marginTop: '-20px' }} >Post Bid</h3>
+        <form className="p-5">
+            <h3>Post Bid</h3>
             <div className="row">
 
                 <div class="mb-3 col-lg-6 col-12">

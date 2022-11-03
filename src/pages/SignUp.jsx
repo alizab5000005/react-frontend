@@ -7,7 +7,7 @@ const SignUp = () => {
         <>
             <Navbar />
             <div className="container">
-                <form style={{ marginTop: '150px' }} className="bg-light p-5 rounded">
+                <form className=" p-5 rounded">
                     <div className="row">
 
                         <div class="mb-3 col-lg-6 col-12">

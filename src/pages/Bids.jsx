@@ -1,12 +1,29 @@
 import React from 'react'
 import Navbar from '../components/front/Navbar'
 import { Link } from 'react-router-dom'
+import Footer from '../components/front/Footer'
 
 const Bids = () => {
     return (
         <>
             <Navbar />
-            <div className="container" style={{ marginTop: '100px' }}>
+            <div class="container-fluid bg-primary py-5 mb-5">
+                <div class="container py-5">
+                    <div class="row align-items-center py-4">
+                        <div class="col-md-6 text-center text-md-left">
+                            <h1 class="display-4 mb-4 mb-md-0 text-secondary text-uppercase">Bids</h1>
+                        </div>
+                        <div class="col-md-6 text-center text-md-right">
+                            <div class="d-inline-flex align-items-center">
+                                <Link class="btn btn-sm btn-outline-light" to={'/'}>Home</Link>
+                                <i class="fas fa-angle-double-right text-light mx-2"></i>
+                                <a class="btn btn-sm btn-outline-light disabled" href="">Bids</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="container" >
                 <div className="row">
                     <div className="col-lg-6 " >
                         <div className="card bg-light p-4 bids" style={{ height: '400px' }}>
@@ -32,6 +49,8 @@ const Bids = () => {
                     </div>
                 </div>
             </div>
+
+            <Footer />
         </>
     )
 }
