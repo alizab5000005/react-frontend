@@ -9,7 +9,7 @@ const Navbar = () => {
             <div className="row">
                 <div className="col-lg-3 bg-secondary d-none d-lg-block">
                     <a href="" className="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                        <h1 className="m-0 display-3 text-primary">Name</h1>
+                        <h1 style={{fontSize:'40px'}} className="m-0 display-3 text-primary">OrderNow.pk</h1>
                     </a>
                 </div>
                 <div className="col-lg-9 bg-light">
@@ -46,7 +46,7 @@ const Navbar = () => {
                     </div>
                     <nav className="navbar navbar-expand-lg  navbar-light p-0">
                         <a href="" className="navbar-brand d-block d-lg-none">
-                            <h1 className="m-0 display-4 text-primary">Name</h1>
+                            <h1 style={{fontSize:'24x'}} className="m-0 display-4 text-primary">OrderNow.pk</h1>
                         </a>
                         <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                             <span className="navbar-toggler-icon"></span>
@@ -55,8 +55,8 @@ const Navbar = () => {
                             <div className="navbar-nav mr-auto py-0">
                                 <Link to={'/'} className="nav-item nav-link ">Home</Link>
                                 <Link to={'/bids'} className="nav-item nav-link ">Bids</Link>
-                                <Link to={'/'} className="nav-item nav-link">About</Link>
-                                <Link to={'/'} className="nav-item nav-link">Contact</Link>
+                               
+                                <Link to={'/contractors'} className="nav-item nav-link">Contractors</Link>
                                 <Link to={'/post-bid'} className="nav-item nav-link ">Post Bid</Link>
                                 <Link to={'/messenger'} className="nav-item nav-link ">Messenger</Link>
                               
@@ -64,6 +64,7 @@ const Navbar = () => {
                                     <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                                     <div className="dropdown-menu rounded-0 m-0">
                                         <Link to={'/admin/login'} className="nav-item nav-link ">Admin Login</Link>
+                                        <Link to={'/become-contractor'} className="nav-item nav-link ">Become Contractor</Link>
                                         
                                     </div>
                                 </div>

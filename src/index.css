@@ -22,6 +22,10 @@ code {
 }
 @media only screen and (max-width: 600px) {
 
+  .pr {
+    width: 230px !important;
+    height: 230px !important;
+  }
   .bids{
     height: 260px !important;
   }

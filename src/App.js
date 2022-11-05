@@ -15,6 +15,10 @@ import BidDetails from './pages/BidDetails';
 import PostBid from './pages/PostBid';
 import Messenger from './pages/Messenger';
 
+import BecomeContractor from './pages/BecomeContractor';
+import ProjectDetails from './pages/contractors/ProjectDetails';
+import AllContractors from './pages/contractors/AllContractors';
+
 function App() {
 
   return (
@@ -30,12 +34,15 @@ function App() {
         <Route exact path='/admin/users' element={< Users />} />
         <Route exact path='/contractor/:name' element={< Profile />} />
         <Route exact path='/' element={< Home />} />
+        <Route exact path='/contractors' element={< AllContractors />} />
         <Route exact path='/sign-up' element={< SignUp />} />
         <Route exact path='/sign-in' element={< SignIn />} />
         <Route exact path='/bids' element={< Bids />} />
         <Route exact path='/bid/:name' element={< BidDetails />} />
         <Route exact path='/post-bid' element={< PostBid />} />
         <Route exact path='/messenger' element={< Messenger />} />
+        <Route exact path='/project-details' element={< ProjectDetails />} />
+        <Route exact path='/become-contractor' element={< BecomeContractor />} />
 
       </Routes>
 
