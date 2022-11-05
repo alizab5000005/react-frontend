@@ -15,7 +15,7 @@ const Banner = () => {
                 <div className="carousel-caption d-flex align-items-center justify-content-center">
                     <div className="p-5" style={{width: '100%', maxWidth: '900px'}}>
                         <h5 className="text-primary text-uppercase mb-md-3">Construction Services</h5>
-                        <h1 className="display-3 text-white mb-md-4">Best Quality Solution In Construction</h1>
+                        <h1 className="display-3 text-white mb-md-4">Best Quality Solution In Construction Services</h1>
                         <a href="" className="btn btn-primary">Get A Quote</a>
                     </div>
                 </div>

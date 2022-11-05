@@ -9,7 +9,7 @@ const Navbar = () => {
             <div className="row">
                 <div className="col-lg-3 bg-secondary d-none d-lg-block">
                     <a href="" className="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                        <h1 style={{fontSize:'40px'}} className="m-0 display-3 text-primary">Constructor.in</h1>
+                        <h1 style={{fontSize:'40px'}} className="m-0 display-3 text-primary">Contractor.in</h1>
                     </a>
                 </div>
                 <div className="col-lg-9 bg-light">
@@ -46,7 +46,7 @@ const Navbar = () => {
                     </div>
                     <nav className="navbar navbar-expand-lg  navbar-light p-0">
                         <a href="" className="navbar-brand d-block d-lg-none">
-                            <h1 style={{fontSize:'24x'}} className="m-0 display-4 text-primary">Constructor.in</h1>
+                            <h1 style={{fontSize:'24x'}} className="m-0 display-4 text-primary">Contractor.in</h1>
                         </a>
                         <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                             <span className="navbar-toggler-icon"></span>
