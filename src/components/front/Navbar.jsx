@@ -69,6 +69,7 @@ const Navbar = () => {
                                     </div>
                                 </div>
                             </div>
+                            <Link to={'/user/username'} className="btn btn-primary mr-2 d-lg-block">Account</Link>
                             <Link to={'/sign-up'} className="btn btn-primary mr-2 d-lg-block">Register</Link>
                             <Link to={'/sign-in'} className="btn btn-primary mr-2 d-lg-block">Login</Link>
                         </div>

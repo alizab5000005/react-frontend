@@ -32,7 +32,9 @@ const Bids = () => {
 
                             </div>
                             <div className="card-body text-dark">
-                                <p style={{ fontSize: '30px', marginTop: '-20px' }}><Link to={'/bid/Bedroom'}>Bedroom</Link></p>
+                                <p style={{ fontSize: '30px', marginTop: '-20px' }}><Link to={'/bid/Bedroom'}>Bedroom</Link>
+                                <span style={{float:'right', fontSize: '20px', marginTop: '10px' }}>Accepted</span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -43,7 +45,9 @@ const Bids = () => {
 
                             </div>
                             <div className="card-body text-dark">
-                                <p style={{ fontSize: '30px', marginTop: '-20px' }}><Link to={'/bid/Kitchen'}>Kitchen</Link></p>
+                                <p style={{ fontSize: '30px', marginTop: '-20px' }}><Link to={'/bid/Kitchen'}>Kitchen</Link>
+                                <span style={{float:'right', fontSize: '20px', marginTop: '10px' }}>Pending</span>
+                                </p>
                             </div>
                         </div>
                     </div>

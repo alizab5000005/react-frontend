@@ -31,6 +31,31 @@ const Profile = () => {
         }
     }
 
+
+
+
+    const onImage01Change = (event) => {
+        document.getElementById('1').style.color = 'orange';
+     }
+     const onImage02Change = (event) => {
+         document.getElementById('2').style.color = 'orange';
+         if (event.target.files && event.target.files[0]) {
+             setImage2(URL.createObjectURL(event.target.files[0]));
+         }
+     }
+     const onImage03Change = (event) => {
+         document.getElementById('3').style.color = 'orange';
+        
+     }
+     const onImage04Change = (event) => {
+         document.getElementById('4').style.color = 'orange';
+        
+     }
+     const onImage05Change = (event) => {
+         document.getElementById('5').style.color = 'orange';
+        
+     }
+
     return (
         <>
             <Navbar />
@@ -179,6 +204,93 @@ const Profile = () => {
                 </div>
             </div>
 
+            <div class="container-fluid py-5">
+                <div class="container">
+                    <div class="row align-items-end mb-4">
+                        <div class="col-lg-6">
+                            <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Complaints</h6>
+                            <h1 class="section-title mb-3">Let Us Know About Your Complaints</h1>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 mb-5 mb-lg-0">
+                            <div class="contact-form">
+                                <div id="success"></div>
+                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                 
+
+                                    <div class="control-group">
+                                        <textarea class="form-control p-4" rows="6" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-primary btn-block py-3 px-5" type="submit" id="sendMessageButton">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="container-fluid py-5">
+                <div class="container">
+                    <div class="row align-items-end mb-4">
+                        <div class="col-lg-6">
+                            <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Feedbacks</h6>
+                            <h1 class="section-title mb-3">Let Us Know About Your Feedbacks</h1>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 mb-5 mb-lg-0">
+                            <div class="contact-form">
+                                <div id="success"></div>
+                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+
+                                    <label htmlFor="">Rating</label>
+                                    <div class="control-group ml-2 my-2">
+                                        <label class=" btn-file" >
+                                            <i id='1' className='fa fa-star'></i>
+                                            <input type="checkbox" onChange={onImage01Change} style={{ display: 'none' }} name="" className='form-conrol mb-3' id="" />
+                                        </label>
+                                        <label class=" btn-file" >
+                                            <i id='2' className='fa fa-star'></i>
+                                            <input type="checkbox" onChange={onImage02Change} style={{ display: 'none' }} name="" className='form-conrol mb-3' id="" />
+                                        </label>
+                                        <label class=" btn-file" >
+                                            <i id='3' className='fa fa-star'></i>
+                                            <input type="checkbox" onChange={onImage03Change} style={{ display: 'none' }} name="" className='form-conrol mb-3' id="" />
+                                        </label>
+                                        <label class=" btn-file" >
+                                            <i id='4' className='fa fa-star'></i>
+                                            <input type="checkbox" onChange={onImage04Change} style={{ display: 'none' }} name="" className='form-conrol mb-3' id="" />
+                                        </label>
+                                        <label class=" btn-file" >
+                                            <i id='5' className='fa fa-star'></i>
+                                            <input type="checkbox" onChange={onImage05Change} style={{ display: 'none' }} name="" className='form-conrol mb-3' id="" />
+                                        </label>
+                                        
+                                    </div>
+                                    <label htmlFor="">Review</label>
+                                    <div class="control-group">
+                                        <textarea class="form-control p-4"  id="message" placeholder="Review" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-primary btn-block py-3 px-5" type="submit" id="sendMessageButton">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
             <Footer />
         </>

@@ -79,6 +79,22 @@ const Sidebar = () => {
                                 </a>
                             </li>
                             <li class="nav-item">
+                                <a href='/admin/messages' class="nav-link">
+                                    <i class="nav-icon far fa-image"></i>
+                                    <p>
+                                        Messages
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href='/admin/feedbacks' class="nav-link">
+                                    <i class="nav-icon far fa-image"></i>
+                                    <p>
+                                        Feedbacks
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
                                 <a href='/admin/complaints' class="nav-link">
                                     <i class="nav-icon far fa-image"></i>
                                     <p>

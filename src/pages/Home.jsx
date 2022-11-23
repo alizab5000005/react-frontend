@@ -11,8 +11,11 @@ const Home = () => {
         <>
             <Navbar />
             <Banner />
-            <UsersContracts/>
+            <UsersContracts />
             <Contractors />
+
+
+           
             <Footer />
 
         </>
